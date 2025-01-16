@@ -89,8 +89,9 @@ const VariantItem = ({ variant, index, onDiscountChange, showRemove, onRemove, p
             <button
               className="btn btn-sm remove-btn"
               onClick={onRemove}
+              style={{ color: 'rgba(0, 0, 0, 0.4)'}}
             >
-              ×
+              X
             </button>
           )}
         </div>
@@ -199,10 +200,11 @@ const ProductItem = ({
                     Add Discount
                   </button>
                 )}
+                {showDiscount && (<div>Please select a product</div>)}
               </div>
             </div>
           ) : (
-            <div className="row pt-5">
+            <div className={variants.length === 1?"row pt-4":"row pt-5"}>
               <div className="col-6 product-title select-product">
                 {displayTitle}
                 <FontAwesomeIcon
@@ -257,8 +259,9 @@ const ProductItem = ({
                   <button
                     className="btn btn-sm remove-btn ms-2"
                     onClick={() => onRemove(index)}
+                    style={{ color: 'rgba(0, 0, 0, 0.4)'}}
                   >
-                    ×
+                    X
                   </button>
                 )}
               </div>
@@ -272,7 +275,7 @@ const ProductItem = ({
                       marginLeft: 'auto',
                       display: 'block',
                       marginBottom: '0.5rem',
-                      marginRight: '11rem'
+                      marginRight: '9.8rem'
                     }}
                   >
                     {showVariants ? (<><u>Hide variants</u>∧</>) : (<><u>Show variants</u>v</>)}
@@ -314,7 +317,7 @@ const ProductItem = ({
                   )}
                 </div>
               )}
-              <div style={{ color: 'rgba(0, 0, 0, 0.1)' }}>____________________________________________________________________________________________</div>
+              <div style={{ color: 'rgba(0, 0, 0, 0.1)',marginLeft:'-1.6em'}}>____________________________________________________________________________________________</div>
             </div>
           )}
         </div>

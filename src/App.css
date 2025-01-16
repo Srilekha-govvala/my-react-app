@@ -2,9 +2,6 @@
 .product-item {
   padding: 1rem;
   background-color: #ffffff;
-  margin-bottom: 1rem;
-  border-width: 48rem;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 /* Select Product Container */
