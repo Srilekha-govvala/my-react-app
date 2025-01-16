@@ -274,8 +274,7 @@ const ProductItem = ({
                     style={{
                       marginLeft: 'auto',
                       display: 'block',
-                      marginBottom: '0.5rem',
-                      marginRight: '9.8rem'
+                      marginRight: '11rem'
                     }}
                   >
                     {showVariants ? (<><u>Hide variants</u>∧</>) : (<><u>Show variants</u>v</>)}
@@ -317,7 +316,7 @@ const ProductItem = ({
                   )}
                 </div>
               )}
-              <div style={{ color: 'rgba(0, 0, 0, 0.1)',marginLeft:'-1.6em'}}>____________________________________________________________________________________________</div>
+              <div style={{ color: 'rgba(0, 0, 0, 0.1)',marginLeft:'-1.6em'}}>_________________________________________________________________________________________________</div>
             </div>
           )}
         </div>
